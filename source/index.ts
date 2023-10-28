@@ -1,3 +1,5 @@
-import dotenv from 'dotenv';
+import AWS from 'aws-sdk';
+import { config } from './config';
 
-dotenv.config();
+AWS.config.update(config.aws);
+
